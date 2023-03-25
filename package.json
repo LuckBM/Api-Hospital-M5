@@ -14,5 +14,6 @@
     "bdon": "node ./src/infra/bdconnect.js",
     "bdoff": "node ./src/infra/bddisconnect.js",
     "allCreate": "node ./src/infra/allCreatePopulate.js"
+    "deleteAll": "node ./src/deleteAll.js"
   }
 }
