@@ -18,6 +18,3 @@ npm start ou npm run dev
 
 
 # Tecnologias utilizadas 
-
-
-![badge-status](https://img.shields.io/badge/status-Em Produção-red?style=for-the-badge)
