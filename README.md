@@ -25,20 +25,30 @@ npm i
 ```sh
 npm start ou npm run dev
 ```
+<h2> Quarto: Para vizualização das rotas ultilize algum programa (recomandado o uso do Postman: https://www.postman.com/)
 
+No programa acesse:
+  
+➤ http://localhost:3000/funcionarios
+
+➤ http://localhost:3000/salas
+
+➤ http://localhost:3000/pacientes
+  
+➤ http://localhost:3000/agenda
+  
+➤ http://localhost:3000/Protocolo
+  
+  
 # Tecnologias utilizadas 
 
 ➤ Node.js: Ambiente de execução ultilizado para desenvolver a API por meio do JavaScript.
 
 ➤ MySQL: Ultilizado no inicio do projeto para verificar as tabelas.
 
-➤ Canva: Ultilizado para criação do SLide de apresentação.
+➤ Canva: Ultilizado para criação do Slide de apresentação.
 
 ➤ JavaScript: Linguagem de programação ultilizada no projeto.
 
 
 ## Pessoas Desenvolvedoras do Projeto:
-
-
-
-|![image] (https://user-images.githubusercontent.com/116355056/228344802-c5060ae4-1776-4c10-993e-cf264ea7de79.png)[(https://https://github.com/LuckBM)]<sub>Lucas Bento Mendonça </sub>|
