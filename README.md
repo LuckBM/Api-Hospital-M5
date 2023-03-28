@@ -7,17 +7,17 @@
 
 <h1> Comandos </h1>
 
-Primeiro: Clone o repositório para seu computador:
+<h2> Primeiro: Clone o repositório para seu computador: </h2>
 
 ```sh
 git clone http://https://github.com/LuckBM/Trabalho-em-Grupo-M5.git
 ```
-Segundo: No terminal do Vs Code ou Node, instale as dependências:
+<h2> Segundo: No terminal do Vs Code ou Node, instale as dependências: </h2>
 
 ```sh
 npm i
 ```
-Terceiro: Execute este código no terminal para iniciar o código:
+<h2> Terceiro: Execute este código no terminal para iniciar o código: </h2>
 
 ```sh
 npm start ou npm run dev
