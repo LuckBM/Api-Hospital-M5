@@ -39,4 +39,5 @@ npm start ou npm run dev
 
 ## Pessoas Desenvolvedoras do Projeto:
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Lucas Bento Mendonça </sub>](https://https://github.com/LuckBM) | :---: | :---: | :---: |
+![image](https://user-images.githubusercontent.com/116355056/228344802-c5060ae4-1776-4c10-993e-cf264ea7de79.png)
+<br><sub>Lucas Bento Mendonça </sub>(https://https://github.com/LuckBM)
