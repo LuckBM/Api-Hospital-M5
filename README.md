@@ -23,11 +23,10 @@ Terceiro: Execute este código no terminal para iniciar o código:
 npm start ou npm run dev
 ```
 
-<h1 align="center">  Tecnologias utilizadas </h1>
+# Tecnologias utilizadas 
 
-<h3>
 ➤ Node.js: Ambiente de execução ultilizado para desenvolver a API por meio do JavaScript.
 ➤ MySQL: Ultilizado no inicio do projeto para verificar as tabelas.
 ➤ Canva: Ultilizado para criação do SLide de apresentação.
 ➤ JavaScript: Linguagem de programação ultilizada no projeto.
-</h3>
+
