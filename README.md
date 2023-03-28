@@ -52,3 +52,11 @@ No programa acesse:
 
 
 ## Pessoas Desenvolvedoras do Projeto:
+
+
+
+### Lucas Bento Mendonça
+
+<a style="display: block;" href="https://www.github.com/LuckBM" target="_blank">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+</a>
