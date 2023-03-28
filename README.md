@@ -25,7 +25,7 @@ npm i
 ```sh
 npm start ou npm run dev
 ```
-<h2> Quarto: Para vizualização das rotas ultilize algum programa (recomandado o uso do Postman: https://www.postman.com/)
+<h2> Quarto: Para vizualização das rotas ultilize algum programa (recomandado o uso do Postman: https://www.postman.com/)</h2>
 
 No programa acesse:
   
