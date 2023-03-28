@@ -1,7 +1,9 @@
 
 <h1 align="center"> Projeto em grupo Módulo 5 - CRUD API  </h1>
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
 <h2> Proposta do projeto:</h2>
 -Desenvolver uma API em Node.js, ultilizando o padrão MVC (Model, View,  Controller) para organização e os verbos HTTP seguindo o padrão REST (Representational, State, Transfer)  além de implementar CRUD (Create, Read, Update, Delete)  em todas as operações criadas.
