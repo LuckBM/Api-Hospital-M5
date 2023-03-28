@@ -26,7 +26,10 @@ npm start ou npm run dev
 # Tecnologias utilizadas 
 
 ➤ Node.js: Ambiente de execução ultilizado para desenvolver a API por meio do JavaScript.
+
 ➤ MySQL: Ultilizado no inicio do projeto para verificar as tabelas.
+
 ➤ Canva: Ultilizado para criação do SLide de apresentação.
+
 ➤ JavaScript: Linguagem de programação ultilizada no projeto.
 
