@@ -36,3 +36,7 @@ npm start ou npm run dev
 
 ➤ JavaScript: Linguagem de programação ultilizada no projeto.
 
+
+## Pessoas Desenvolvedoras do Projeto:
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Lucas Bento Mendonça </sub>](https://https://github.com/LuckBM) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br> | :---: | :---: | :---: |
