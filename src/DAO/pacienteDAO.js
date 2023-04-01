@@ -1,25 +1,25 @@
 import database from "../infra/bd.js";
 
-class SalaDAO {
-  static async TodasSalas() {
-    const dadosbd = await database.query("SELECT * FROM sala");
+class pacienteDAO {
+  static async TodosOsPacientes() {
+    const dadosbd = await database.query("SELECT * FROM paciente");
     if (dadosbd.length === 0) {
       return {
-        dados: "Não há salas cadastradas",
+        dados: "Não há pacientes cadastrados",
         status: 404,
       };
     } else {
       return {
-        dados: { SalasCadastradas: dadosbd },
+        dados: { pacientesCadastrados: dadosbd },
         status: 200,
       };
     }
   }
 
-  static async mostrarUm(numero, andar) {
+  static async mostrarUm(cpf) {
     const dadosbd = await database.query(
-      'SELECT * FROM sala WHERE numero_da_sala = ?',
-      [numero, andar]
+      'SELECT * FROM paciente WHERE cpf_paciente = ?',
+      [cpf]
     );
     return {
       dados: { msg: dadosbd },
@@ -28,28 +28,30 @@ class SalaDAO {
   }
 
   static async inserir(obj) {
+    console.log(obj)
     try {
       await database.query(
-        "INSERT INTO sala (numero_da_sala, andar) VALUES (?,?)",
+        "INSERT INTO paciente (cpf_paciente, nome, sexo, data_de_nascimento, sala) VALUES (?,?,?,?,?)",
         Object.values(obj)
       );
     } catch (error) {
+      console.log(error)
       return {
         dados: { msg: "MySql error", error: error.code },
         status: 500,
       };
     }
     return {
-      dados: { msg: "Sala inserida com sucesso na tabela sala" },
+      dados: { msg: "Paciente inserido com sucesso na tabela sala" },
       status: 201,
     };
   }
 
-  static async atualizar(numero, obj) {
+  static async atualizar(cpf) {
     try {
       await database.query(
-        "UPDATE sala SET numero_da_sala = ?, andar = ? WHERE numero_da_sala = ?",
-        [obj.numero_da_sala, obj.andar, numero]
+        "UPDATE paciente SET cpf_paciente = ?, nome = ?, sexo = ?, data_de_nascimento = ?, sala = ? WHERE cpf_paciente = ?",
+        [cpf]
       );
     } catch (error) {
       return {
@@ -58,16 +60,16 @@ class SalaDAO {
       };
     }
     return {
-      dados: "Sala atualizada com sucesso",
+      dados: "Paciente atualizado com sucesso",
       status: 200,
     };
   }
 
-  static async excluir(numero, andar) {
+  static async excluir(cpf) {
     try {
       await database.query(
-        "DELETE FROM sala WHERE numero_da_sala = ?",
-        [numero, andar]
+        "DELETE FROM paciente WHERE cpf_paciente = ?",
+        [cpf]
       );
     } catch (error) {
       console.log(error)
@@ -78,11 +80,11 @@ class SalaDAO {
     }
     return {
       dados: {
-        msg: "Sala excluída com sucesso da tabela sala",
+        msg: "Paciente excluída com sucesso da tabela sala",
       },
       status: 200,
     };
   }
 }
 
-export default SalaDAO;
+export default pacienteDAO;

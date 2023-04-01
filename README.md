@@ -1,5 +1,5 @@
 
-<h1 align="center"> Projeto do Módulo 5 - CRUD API  </h1>
+<h1 align="center"> Projeto em grupo Módulo 5 - CRUD API  </h1>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
@@ -53,10 +53,10 @@ No programa acesse:
 
 ## Pessoas Desenvolvedoras do Projeto:
 
+
+
 ### Lucas Bento Mendonça
 
 <a style="display: block;" href="https://www.github.com/LuckBM" target="_blank">
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
 </a>
-
-Slide sobre o projeto: https://www.canva.com/design/DAFefUpcies/qqC5GyPeVf2O1KkGPTZi_Q/view?utm_content=DAFefUpcies&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

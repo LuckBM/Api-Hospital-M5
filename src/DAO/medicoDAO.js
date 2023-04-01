@@ -1,25 +1,25 @@
 import database from "../infra/bd.js";
 
-class SalaDAO {
-  static async TodasSalas() {
-    const dadosbd = await database.query("SELECT * FROM sala");
+class medicoDAO {
+  static async TodosOsMedicos() {
+    const dadosbd = await database.query("SELECT * FROM medico");
     if (dadosbd.length === 0) {
       return {
-        dados: "Não há salas cadastradas",
+        dados: "Não há medicos cadastrados",
         status: 404,
       };
     } else {
       return {
-        dados: { SalasCadastradas: dadosbd },
+        dados: { medicosCadastrados: dadosbd },
         status: 200,
       };
     }
   }
 
-  static async mostrarUm(numero, andar) {
+  static async mostrarUm(crm) {
     const dadosbd = await database.query(
-      'SELECT * FROM sala WHERE numero_da_sala = ?',
-      [numero, andar]
+      'SELECT * FROM medico WHERE crm_medico = ?',
+      [crm]
     );
     return {
       dados: { msg: dadosbd },
@@ -30,7 +30,7 @@ class SalaDAO {
   static async inserir(obj) {
     try {
       await database.query(
-        "INSERT INTO sala (numero_da_sala, andar) VALUES (?,?)",
+        "INSERT INTO medico (crm_medico, nome, sala, email) VALUES (?,?,?,?)",
         Object.values(obj)
       );
     } catch (error) {
@@ -40,16 +40,16 @@ class SalaDAO {
       };
     }
     return {
-      dados: { msg: "Sala inserida com sucesso na tabela sala" },
+      dados: { msg: "medico inserido com sucesso na tabela medico" },
       status: 201,
     };
   }
 
-  static async atualizar(numero, obj) {
+  static async atualizar(crm) {
     try {
       await database.query(
-        "UPDATE sala SET numero_da_sala = ?, andar = ? WHERE numero_da_sala = ?",
-        [obj.numero_da_sala, obj.andar, numero]
+        "UPDATE medico SET crm_medico = ?, nome = ?, sala = ?, email = ?",
+        [obj.crm_medico, obj.nome, obj.sala, obj.email, crm]
       );
     } catch (error) {
       return {
@@ -58,16 +58,16 @@ class SalaDAO {
       };
     }
     return {
-      dados: "Sala atualizada com sucesso",
+      dados: "medico atualizado com sucesso",
       status: 200,
     };
   }
 
-  static async excluir(numero, andar) {
+  static async excluir(crm) {
     try {
       await database.query(
-        "DELETE FROM sala WHERE numero_da_sala = ?",
-        [numero, andar]
+        "DELETE FROM medico WHERE crm_medico = ?",
+        [crm]
       );
     } catch (error) {
       console.log(error)
@@ -78,11 +78,11 @@ class SalaDAO {
     }
     return {
       dados: {
-        msg: "Sala excluída com sucesso da tabela sala",
+        msg: "medico excluída com sucesso da tabela medico",
       },
       status: 200,
     };
   }
 }
 
-export default SalaDAO;
+export default medicoDAO;

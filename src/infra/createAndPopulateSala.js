@@ -2,7 +2,7 @@ import database from "./bd.js";
 
 const popSala = () => {
 
-  database.connection.connect();
+ 
 
   database.connection.query(
     "CREATE TABLE `hospital`.`sala` (numero_da_sala int not null, andar int not null);",
@@ -10,7 +10,7 @@ const popSala = () => {
       if (error) {
         console.log(error);
       } else {
-        console.log("tabela sala criada com sucesso");
+        console.log("tabela medico criada com sucesso");
       }
     }
   );
@@ -21,7 +21,7 @@ const popSala = () => {
       if (error) {
         console.log(error);
       } else {
-        console.log("tabela sala populada com sucesso");
+        console.log("tabela medico populada com sucesso");
       }
     }
   );
